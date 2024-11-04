@@ -12,13 +12,14 @@ public class BrowserTest {
 	public static void main(String[] args) throws InterruptedException{
 //		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		System.out.println(WebDriverManager.chromedriver().getDownloadedDriverPath());
 
 		driver.get("https://www.google.com/");
 		WebElement textbox= driver.findElement(By.id("APjFqb"));
 		textbox.sendKeys("Automation testing");
 		
 		Thread.sleep(3500);
+		
+		
 		driver.close();
 		
 //		String prjectPath=System.getProperty("user.dir");

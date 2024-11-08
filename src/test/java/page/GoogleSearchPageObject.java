@@ -16,7 +16,7 @@ public class GoogleSearchPageObject {
 	}
 	
 	public void setInsertTextBox(String text) {
-		driver.findElement(textbox_Search).sendKeys(text);
+		driver.findElement(textbox_Search).sendKeys(text,Keys.RETURN);
 		
 	}
 	public void clickButtonSearch() {

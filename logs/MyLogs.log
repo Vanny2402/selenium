@@ -1,0 +1,10 @@
+[DEBUG] 2024-11-09 12:36:00.052 [main] - This is a debug message.
+[INFO ] 2024-11-09 12:36:00.054 [main] - This is an info message.
+[WARN ] 2024-11-09 12:36:00.054 [main] - This is a warning message.
+[ERROR] 2024-11-09 12:36:00.054 [main] - This is an error message.
+[FATAL] 2024-11-09 12:36:00.054 [main] - This is a fatal message.
+[DEBUG] 2024-11-09 12:42:07.620 [main] - This is a debug messagess.
+[INFO ] 2024-11-09 12:42:07.622 [main] - This is an info messagess.
+[WARN ] 2024-11-09 12:42:07.622 [main] - This is a warning messagess.
+[ERROR] 2024-11-09 12:42:07.622 [main] - This is an error messagess.
+[FATAL] 2024-11-09 12:42:07.622 [main] - This is a fatal messagess.

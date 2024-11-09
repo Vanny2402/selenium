@@ -3,6 +3,7 @@ test1\ExtentReportTestNg.class
 test1\GoogleSearchTest.class
 test1\Test_google_search.class
 test1\ExtentReportBasic.class
+capability\DesiredCapability_Demo.class
 test1\TestNg_Demo2.class
 utility\waitelement.class
 page\GoogleSearchPage.class

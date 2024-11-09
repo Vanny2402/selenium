@@ -10,6 +10,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -19,32 +21,39 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import config.PropertiesFile;
 import page.GoogleSearchPageObject;
 
 
 public class ExtentReportTestNg {
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports extent;
+	public static String browser =null;
 	WebDriver driver=null;
 	@BeforeSuite
 	public void setUp() {
 		htmlReporter = new ExtentHtmlReporter("comReport.html");
+		PropertiesFile.getProperty();
 		extent= new ExtentReports();
 		extent.attachReporter(htmlReporter);
-        driver = new ChromeDriver();
+		if(browser.equalsIgnoreCase("chrome"))
+			driver = new ChromeDriver();
+		else if (browser.equalsIgnoreCase("firefox"))
+			driver=new FirefoxDriver();
+		else {
+			driver=new InternetExplorerDriver();
+		}
 	}
 	
 
 	@Test
 	public void test1() throws Exception {
-		
 	    // Navigate to Google
 	    driver.get("https://www.google.com/");
 	    ExtentTest test = extent.createTest("My first Test!", "My Description");
 	    GoogleSearchPageObject searchPage = new GoogleSearchPageObject(driver);
 	    searchPage.setInsertTextBox("My first Hash!");
-	    
-	    
+	 
 	    Thread.sleep(2000);  // For demonstration; prefer explicit waits
 	    
 	    // Capture and save screenshot
@@ -63,7 +72,7 @@ public class ExtentReportTestNg {
 	@AfterTest
 	public void tearDownTest() {
 		driver.close();
-		driver.quit();
+//		driver.quit();
 		System.out.println("Quit the browser!");
 	}
 	@AfterSuite

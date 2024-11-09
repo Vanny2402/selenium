@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" name="PropertiesConfig">
+    
+    <!-- Properties -->
+    <Properties>
+        <Property name="filename">logs</Property>
+    </Properties>
+    
+    <!-- Appenders -->
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] - %msg%n"/>
+        </Console>
+
+        <!-- File Appender -->
+        <File name="FileAppender" fileName="${filename}/MyLogs.log">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] - %msg%n"/>
+        </File>
+    </Appenders>
+
+    <!-- Loggers -->
+    <Loggers>
+        <!-- Logger for specific package (demo4j) -->
+        <Logger name="demo4j" level="debug" additivity="false">
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+
+        <!-- Root Logger Configuration -->
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

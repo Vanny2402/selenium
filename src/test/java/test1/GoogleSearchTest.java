@@ -19,8 +19,8 @@ public class GoogleSearchTest {
     }
 
     public static void google_Search() throws InterruptedException {
-        String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath + "/driver/chromedriver.exe");
+//        String projectPath = System.getProperty("user.dir");
+//        System.setProperty("webdriver.chrome.driver", projectPath + "/driver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.google.com/");
 

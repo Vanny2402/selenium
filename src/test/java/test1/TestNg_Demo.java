@@ -4,22 +4,32 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import config.PropertiesFile;
 import utility.waitelement;
 
 
 public class TestNg_Demo {
 	WebDriver driver =null;
+	public static String browser =null;
+	PropertiesFile ds =new PropertiesFile();
 	
 	@BeforeTest
 	public void setUpTest() {
-        String projectPath = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", projectPath + "/driver/chromedriver.exe");
-        driver=new ChromeDriver();
+		PropertiesFile.getProperty();
+		if(browser.equalsIgnoreCase("chrome"))
+			driver = new ChromeDriver();
+		else if (browser.equalsIgnoreCase("firefox"))
+			driver=new FirefoxDriver();
+		else {
+			driver=new InternetExplorerDriver();
+		}
 	}
 	
 	@Test

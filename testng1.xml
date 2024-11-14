@@ -1,0 +1,12 @@
+<suite name="Suite">
+<listeners>
+	<listender class-name="listeners.TestNgLestener"></listender>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="listeners.TestNgListenerDemo"/>
+      <class name="listeners.TestNgListenerDemo2"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

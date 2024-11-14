@@ -1,0 +1,19 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  	<define name ="regression1"> 
+  		<include name ="regression"></include>
+  		<include name ="smoke"></include>
+  		
+  	</define>
+  	<run>
+  		<include  name="regression1"> </include>
+  	</run>
+  </groups>
+  
+    <classes>
+      <class name="testNgPrioritize.TestNgGroupDemo"/>
+    </classes>
+  </test> 
+</suite>

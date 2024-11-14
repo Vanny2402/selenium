@@ -19,7 +19,7 @@ public class GoogleSearchPageObject {
 		driver.findElement(textbox_Search).sendKeys(text,Keys.RETURN);
 		
 	}
-	public void clickButtonSearch() {
-		driver.findElement(button_Search).click();
-	}
+//	public void clickButtonSearch() {
+//		driver.findElement(button_Search).click();
+//	}
 }

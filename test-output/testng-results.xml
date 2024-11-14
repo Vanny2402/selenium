@@ -1,113 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T11:07:26 ICT" name="Default suite" finished-at="2024-11-14T11:07:50 ICT" duration-ms="24224">
+  <suite started-at="2024-11-14T14:04:24 ICT" name="Default suite" finished-at="2024-11-14T14:04:24 ICT" duration-ms="85">
     <groups>
+      <group name="regression">
+        <method signature="TestNgGroupDemo.test3()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" name="test3" class="testNgPrioritize.TestNgGroupDemo"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TestNgGroupDemo.test2()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" name="test2" class="testNgPrioritize.TestNgGroupDemo"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TestNgGroupDemo.test1()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" name="test1" class="testNgPrioritize.TestNgGroupDemo"/>
+        <method signature="TestNgGroupDemo.test2()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" name="test2" class="testNgPrioritize.TestNgGroupDemo"/>
+        <method signature="TestNgGroupDemo.test3()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" name="test3" class="testNgPrioritize.TestNgGroupDemo"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2024-11-14T11:07:26 ICT" name="Default test" finished-at="2024-11-14T11:07:50 ICT" duration-ms="24224">
-      <class name="utility.ExcelDataProvider">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:26 ICT" name="setUpTest" finished-at="2024-11-14T11:07:29 ICT" duration-ms="3003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:30 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:37 ICT" duration-ms="6572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@11]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-11-14T14:04:24 ICT" name="Default test" finished-at="2024-11-14T14:04:24 ICT" duration-ms="85">
+      <class name="testNgPrioritize.TestNgGroupDemo">
+        <test-method signature="test1()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" started-at="2024-11-14T14:04:24 ICT" name="test1" finished-at="2024-11-14T14:04:24 ICT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:37 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:39 ICT" duration-ms="2679" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@12]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test2()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" started-at="2024-11-14T14:04:24 ICT" name="test2" finished-at="2024-11-14T14:04:24 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:39 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:42 ICT" duration-ms="2671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@13]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" started-at="2024-11-14T14:04:24 ICT" name="test3" finished-at="2024-11-14T14:04:24 ICT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:42 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:45 ICT" duration-ms="2737" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@14]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test3 -->
+        <test-method signature="test4()[pri:0, instance:testNgPrioritize.TestNgGroupDemo@750e2b97]" started-at="2024-11-14T14:04:24 ICT" name="test4" finished-at="2024-11-14T14:04:24 ICT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:45 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:48 ICT" duration-ms="2768" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@15]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:utility.ExcelDataProvider@6caf0677]" started-at="2024-11-14T11:07:48 ICT" name="test1" data-provider="tst1data" finished-at="2024-11-14T11:07:50 ICT" duration-ms="2683" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vansnykourn168@gmail.com6]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Vnn@123s@16]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- utility.ExcelDataProvider -->
+        </test-method> <!-- test4 -->
+      </class> <!-- testNgPrioritize.TestNgGroupDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,27 @@
+
+<suite name="Suite1" parallel ="tests" thread-count="3" >
+ 
+ <test name="Test on firefox">
+  <parameter name="browsername" value="firefox"> </parameter>
+    <classes>
+      <class name="testNgPrioritize.TestNgMultiBrowser"/>
+    </classes>
+  </test>
+  
+  <test name="Test on chrome">
+    <parameter name="browsername" value="chrome"> </parameter>
+    <classes>
+      <class name="testNgPrioritize.TestNgMultiBrowser"/>
+    </classes>
+  </test>
+  
+  
+  <test name="Test on internet explore">
+  <parameter name="browsername" value="ljsdlf"> </parameter>
+    <classes>
+      <class name="testNgPrioritize.TestNgMultiBrowser"/>
+    </classes>
+  </test>
+  
+  
+</suite>

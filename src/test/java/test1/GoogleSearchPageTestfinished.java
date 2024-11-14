@@ -1,12 +1,10 @@
 
 package test1;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import page.GoogleSearchPageObject;
-import utility.waitelement;
 
 public class GoogleSearchPageTestfinished {
 
@@ -21,8 +19,6 @@ public class GoogleSearchPageTestfinished {
         
         GoogleSearchPageObject searchpage= new GoogleSearchPageObject(driver);
         searchpage.setInsertTextBox("My first text!");
-        waitelement.waitForElementToBeClickable(driver, By.name("btnK"));
-        searchpage.clickButtonSearch();
         Thread.sleep(5000);
         driver.close();
         

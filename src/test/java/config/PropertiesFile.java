@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import test1.ExtentReportTestNg;
 import test1.TestNg_Demo;
+import utility.ExcelDataProvider;
 
 public class PropertiesFile {
 	static Properties properties=new Properties();
@@ -30,8 +31,8 @@ public class PropertiesFile {
 			System.out.println("Database URL: " + browser);
 			
 			ExtentReportTestNg.browser=browser;
+			ExcelDataProvider.browser=browser;
 			TestNg_Demo.browser=browser;
-			System.out.println(ExtentReportTestNg.browser);
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}

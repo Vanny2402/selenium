@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test1.TestNg_Demo">
+      <class name="utility.ExcelDataProvider">
         <methods>
           <include name="setUpTest"/>
-          <include name="google_Search"/>
-          <include name="tearDownTest"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- test1.TestNg_Demo -->
+      </class> <!-- utility.ExcelDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

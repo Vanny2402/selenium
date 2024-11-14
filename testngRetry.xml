@@ -1,0 +1,8 @@
+
+<suite name="RetrySuite">
+  <test name="RetryTest">
+    <classes>
+      <class name="testNgPrioritize.Retry2"/>
+    </classes>
+  </test> <!-- RetryTest -->
+</suite> <!-- RetrySuite -->

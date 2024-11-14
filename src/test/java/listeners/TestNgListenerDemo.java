@@ -2,11 +2,11 @@ package listeners;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import page.*;
+
+import page.GoogleSearchPageObject;
 
 @Listeners(listeners.TestNgLestener.class)
 public class TestNgListenerDemo {

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgPrioritize.TestNgMultiBrowser">
+      <class name="testNgPrioritize.TestNgRetry">
         <methods>
-          <include name="setUp"/>
-          <include name="test1"/>
-          <include name="tearDown"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- testNgPrioritize.TestNgMultiBrowser -->
+      </class> <!-- testNgPrioritize.TestNgRetry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

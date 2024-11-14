@@ -1,0 +1,10 @@
+
+<suite name="Suite">
+
+  <test name="Test">
+  <!--   <parameter name="myname" value ="Automation"> </parameter>-->
+  <classes> 
+  	  <class name="testNgPrioritize.TestNgParameteDemo"></class>
+  </classes>
+  </test> 
+</suite>

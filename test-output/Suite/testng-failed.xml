@@ -3,13 +3,11 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testNgPrioritize.TestNgMultiBrowser">
+      <class name="testNgPrioritize.TestNgParameteDemo">
         <methods>
-          <include name="setUp"/>
-          <include name="test1"/>
-          <include name="tearDown"/>
+          <include name="Test"/>
         </methods>
-      </class> <!-- testNgPrioritize.TestNgMultiBrowser -->
+      </class> <!-- testNgPrioritize.TestNgParameteDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

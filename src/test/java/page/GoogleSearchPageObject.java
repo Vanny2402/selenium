@@ -1,7 +1,6 @@
 package page;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class GoogleSearchPageObject {
@@ -16,10 +15,10 @@ public class GoogleSearchPageObject {
 	}
 	
 	public void setInsertTextBox(String text) {
-		driver.findElement(textbox_Search).sendKeys(text,Keys.RETURN);
+		driver.findElement(textbox_Search).sendKeys(text);
 		
 	}
-//	public void clickButtonSearch() {
-//		driver.findElement(button_Search).click();
-//	}
+	public void clickButtonSearch() {
+		driver.findElement(button_Search).click();
+	}
 }

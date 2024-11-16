@@ -3,11 +3,17 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testNgPrioritize.TestNgParameteDemo">
+      <class name="listeners.TestNgListenerDemo">
         <methods>
-          <include name="Test"/>
+          <include name="Test3"/>
         </methods>
-      </class> <!-- testNgPrioritize.TestNgParameteDemo -->
+      </class> <!-- listeners.TestNgListenerDemo -->
+      <class name="listeners.TestNgListenerDemo2">
+        <methods>
+          <include name="Test5"/>
+          <include name="Test6"/>
+        </methods>
+      </class> <!-- listeners.TestNgListenerDemo2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

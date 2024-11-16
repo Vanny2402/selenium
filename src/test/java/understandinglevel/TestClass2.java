@@ -38,7 +38,7 @@ public class TestClass2 extends BaseTest {
     public void afterMethod() {
         System.out.println("AfterMethod - Runs after each test method in TestClass2");
     }
-
+    
     @Test
     public void testMethod1() {
         System.out.println("TestMethod1 - Test method in TestClass2");

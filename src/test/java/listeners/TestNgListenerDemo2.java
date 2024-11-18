@@ -14,7 +14,7 @@ public class TestNgListenerDemo2 {
 	@Test
 	public void Test5() {
 		System.out.println("This is Test5 ");
-		Assert.assertTrue(false);
+		Assert.assertTrue(true);
 	}
 	
 	

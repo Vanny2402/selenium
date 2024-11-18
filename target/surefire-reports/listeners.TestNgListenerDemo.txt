@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: TestSuite
+Test set: listeners.TestNgListenerDemo
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.627 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 7.023 s - in listeners.TestNgListenerDemo
